@@ -1,0 +1,43 @@
+@objects
+    topheader                       #header
+    topheaderimage                  #header-content img
+    footerbtn                       #FormSubmitButn
+    footercopyrgt                   #footer-copyright
+
+
+= Header Section =
+    @on desktop
+        topheader:
+            css background-color contains "rgb(66, 85, 99)"
+        topheaderimage:
+            width 100px
+            height 92px
+    @on mobile
+        topheader:
+            css background-color contains "rgb(66, 85, 99)"
+        topheaderimage:
+            width 100px
+            height 92px
+    @on tablet
+        topheader:
+            css background-color contains "rgb(66, 85, 99)"
+        topheaderimage:
+            width 100px
+            height 92px
+
+= Footer Section =
+    @on desktop
+        footercopyrgt:
+            css background-color contains "rgb(66, 85, 99)"
+        footerbtn:
+            css background-color contains "rgb(66, 85, 99)"
+    @on mobile
+        footercopyrgt:
+            css background-color contains "rgb(66, 85, 99)"
+        footerbtn:
+            css background-color contains "rgb(66, 85, 99)"
+    @on tablet
+        footercopyrgt:
+            css background-color contains "rgb(66, 85, 99)"
+        footerbtn:
+            css background-color contains "rgb(66, 85, 99)"

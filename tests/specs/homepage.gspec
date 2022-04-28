@@ -1,0 +1,132 @@
+@objects
+    header               #topnav
+    TopHeaderLogo        #topnav .logo
+    TopHeaderMenu-*      #navigation ul li
+    Hero                 .bg-home
+    Herosec              .title-heading   
+    Heroicon             .title-heading img
+    HeroHeading          .title-heading h4
+    HeroPara             .title-heading p
+    HeroButton           .btn-primary
+
+= Header Section =
+    @on desktop
+        header:
+            centered horizontally inside screen 1px
+            height 74px
+            inside screen 0px top left right
+        TopHeaderLogo:
+            width 118px
+            height 74px
+            inside header 0px top bottom
+        TopHeaderMenu-*:
+            css font-size is "15px"
+            css font-weight is "400"
+            css letter-spacing is "normal"
+            css line-height is "22.5px"
+    @on mobile
+        header:
+            centered horizontally inside screen 1px
+            height 74px
+            inside screen 0px top left right
+        TopHeaderLogo:
+            width 118px
+            height 74px
+    @on tablet
+        header:
+            centered horizontally inside screen 1px
+            height 74px
+            inside screen 0px top left right
+        TopHeaderLogo:
+            width 118px
+            height 74px
+
+= Hero Section =
+    @on desktop
+        Hero:
+            height 995px
+            width 1883px
+        Heroicon:
+            height 36px
+            width 41px
+        HeroHeading:
+            width 1116px
+            css line-height is "57.6px"
+            css font-size is "48px"
+            css font-family is "'Poppins', sans-serif"
+            css font-weight is "700"
+            inside Herosec 60px top
+            inside Herosec 144px bottom
+        HeroPara:
+            width 600px
+            css line-height is "27.2px"
+            css font-size is "17px"
+            css font-family is "'Roboto', sans-serif"
+            css font-weight is "400"
+            color-scheme 3% #8492a6
+        HeroButton:
+            css border-color is "rgb(42, 82, 195)"
+            css background-color is "rgb(42, 82, 195)"
+            css font-size is "16px"
+            css line-height is "24px"
+            css border-radius is "6px"
+    @on mobile
+        Hero:
+            height 646px
+            width 433px
+        Heroicon:
+            height 36px
+            width 41px
+        HeroHeading:
+            width 409px 
+            css line-height is "36px"
+            css font-size is "30px"
+            css font-family is "'Poppins', sans-serif"
+            css font-weight is "700"
+            inside Herosec 60px top
+            inside Herosec 166px bottom
+        HeroPara:
+            width 409px
+            css line-height is "25.6px"
+            css font-size is "16px"
+            css font-family is "'Roboto', sans-serif"
+            css font-weight is "400"
+            color-scheme 2% #8492a6
+        HeroButton:
+            css border-color is "rgb(42, 82, 195)"
+            css background-color is "rgb(42, 82, 195)"
+            css font-size is "16px"
+            css line-height is "24px"
+            css border-radius is "6px"
+    @on tablet
+        Hero:
+            height 621px
+            width 583px
+        Heroicon:
+            height 36px
+            width 41px
+        HeroHeading:
+            width 516px
+            css line-height is "36px"
+            css font-size is "30px"
+            css font-family is "'Poppins', sans-serif"
+            css font-weight is "700"
+            inside Herosec 60px top
+            inside Herosec 141px bottom
+        HeroPara:
+            width 516px
+            css line-height is "25.6px"
+            css font-size is "16px"
+            css font-family is "'Roboto', sans-serif"
+            css font-weight is "400"
+            color-scheme 3% #8492a6
+        HeroButton:
+            css border-color is "rgb(42, 82, 195)"
+            css background-color is "rgb(42, 82, 195)"
+            css font-size is "16px"
+            css line-height is "24px"
+            css border-radius is "6px"
+
+
+
+

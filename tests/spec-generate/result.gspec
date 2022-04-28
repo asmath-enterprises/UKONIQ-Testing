@@ -1,0 +1,37 @@
+= Skeleton =
+    header:
+        centered horizontally inside screen 1px
+        height 74px
+        inside screen 0px top left right
+
+= header elements =
+    TopHeaderMenu-1, TopHeaderMenu-2, TopHeaderMenu-3, TopHeaderMenu-4, TopHeaderMenu-5:
+        inside header 0px top bottom
+
+    TopHeaderLogo:
+        inside header 0px top bottom, 35px left
+        left-of TopHeaderMenu-1
+
+    TopHeaderMenu-1:
+        left-of TopHeaderMenu-2 20px
+        width 62px
+
+    TopHeaderMenu-3:
+        left-of TopHeaderMenu-4 21px
+        right-of TopHeaderMenu-2 20px
+        width 81px
+
+    TopHeaderMenu-5:
+        left-of TopHeaderMenu-6 21px
+        right-of TopHeaderMenu-4 20px
+        width 58px
+
+    TopHeaderMenu-4:
+        width 83px
+
+    TopHeaderLogo, TopHeaderMenu-1, TopHeaderMenu-2, TopHeaderMenu-3, TopHeaderMenu-4, TopHeaderMenu-5, TopHeaderMenu-6:
+        height 74px
+
+    TopHeaderMenu-6:
+        inside header 0px top bottom, 36px right
+

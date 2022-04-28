@@ -1,0 +1,20 @@
+{
+	"scripts": {
+		"galen:browserstack": "galen test tests/visual/browserstack.test.js --htmlreport reports/BrowserstackReport  -Dbrowserstack.key=52uBC2xxvd3gZhfpFEsx -Dbrowserstack.username=dineshm4",
+		"test": "galen test tests/homepage.test.js --htmlreport reports",
+		"test:browserstack": "npm run galen:browserstack",
+		"test:parallel": "galen test tests/homepage.test.js --recursive --parallel-tests 5 --htmlreport reports",
+		"spec:dump": "galen dump tests/spec-generate/homepage.gspec --url https://shreethemes.in/fronter/index-startup.html -Dwebdriver.chrome.driver=drivers/chromedriver.exe --size 1024x768 --export spec-generate-dump && npm run post:dump",
+		"spec:export": "galen generate spec-generate-dump/page.json --export tests/spec-generate/result.gspec --no-galen-extras",
+		"deploy:surge": "surge reports/ galen-test-report1.surge.sh && npm run post:surge",
+		"post:test": "opener reports/report.html",
+		"post:browserstack": "opener reports/BrowserstackReport/report.html",
+		"post:dump": "opener spec-generate-dump/page.html",
+		"post:surge": "opener https://galen-test-report1.surge.sh/report.html"
+	},
+	"devDependencies": {
+		"opener": "^1.5.2",
+		"prettier": "^2.5.1",
+		"surge": "^0.23.1"
+	}
+}
